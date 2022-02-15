@@ -9,8 +9,8 @@
 }
 
 .card{
-    background-color: rgba(25, 41, 47,0.67);
-    color: darkolivegreen;
+    background-color: darkolivegreen;
+    /* color: darkolivegreen; */
     border:1px  chartreuse;
     border-style: groove;
     
