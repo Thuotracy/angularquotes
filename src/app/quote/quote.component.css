@@ -3,14 +3,14 @@
 }
 
 .card-title:hover{
-    color: darkolivegreen; 
+    color: blanchedalmond; 
     text-decoration-line: underline ;
     
 }
 
 .card{
     background-color: rgba(25, 41, 47,0.67);
-    color: blanchedalmond;
+    color: darkolivegreen;
     border:1px  chartreuse;
     border-style: groove;
     
