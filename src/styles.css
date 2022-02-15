@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import "~bootstrap/dist/css/bootstrap.css"; */
+@font-face{
+    font-family: 'Handlee';
+    src: url(./assets/fonts/Handlee/Handlee-Regular.ttf);
+}
+body { background:url(./assets/images/bg2.jpg) ; font-family: 'Handlee';}

@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+<div class="maincontent">
+    <nav class="nav justify-content-center navbar-fixed-top navbar-dark bg-dark">
+
+        <div class="navbar-nav ml-auto">
+            <app-quote-form  (addQuote)='AddNewQuote($event)'></app-quote-form>
+        </div>    
+      
+    </nav>
+    <div class="quotes">
+        <div class="container">
+            <h4 class="text-center">Quotes</h4>
+
+            <div class="card-columns">
+                <div class="card" *ngFor="let quote of quotes;let i=index">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title"(click)='toggleDetails(i)'>{{quote.id}} <br><i class="fas  fa-quote-left    "></i> <br><br>{{quote.quote}}  </h5>
+                        
+                        <div class="card-text"*ngIf="quote.showQuoteDetails">
+                            <p><i class="far fa-thumbs-up    " (click)='upvoteFunc(i)' (click)='mostPopular()'></i>  <i style="text-indent: 2em;" (click)='downvoteFunc(i)' class="far fa-thumbs-down    "></i></p>
+                            <app-quote-details [quote]='quote' (isDeleted)='deleteQuote($event,i)'></app-quote-details>
+        
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="popularQuote" >
+
+            <h4>Popular Quotes</h4>
+            <div class="card popular" *ngFor="let popular of populars;let i=index" appHighlight>
+                <div class="card-header">
+                    <h4 >{{popular.id}} <br><i class="fas  fa-quote-left    "></i> <br> {{popular.quote}}</h4>
+                </div>
+                <div class="card-body">
+                    <h6 class="card-title"><small class="text">Author ~ </small>{{popular.author}}</h6>
+                    <p class="card-text">{{popular.upvote}} Upvotes</p>
+                </div>
+                
+            </div>
+            
+
+
+        </div>
+        
+       
+    </div>
+
+
+    
+    
+    
+</div>
+
+

@@ -1,0 +1,59 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-md " data-toggle="modal" data-target="#modelId">
+  Add Quote
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add a Quote</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <form (ngSubmit)="onSubmit(form)" #form="ngForm">
+
+                <div class="modal-body">
+                
+                    <div class="form-group">
+                      <label for="">Name</label>
+                      <input type="text" name="userName" id="userName" class="form-control" placeholder="Please input your name..." required #userName='ngModel' [(ngModel)]="newQuote.userName">
+                      <div [hidden]="userName.value||userName.pristine" class="alert alert-danger">
+                          <p>Name is required</p>
+                      </div>
+                      
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="form-group">
+                              <label for="">Quote</label>
+                              <textarea class="form-control" name="quote" id="quote" rows="3" placeholder="Please input Quote" required #quote='ngModel' [(ngModel)]="newQuote.quote"></textarea>
+                              <div [hidden]="quote.value||quote.pristine" class="alert alert-danger">
+                                <p>Quote is required</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                              <label for="">Author</label>
+                              <input type="text" name="author" id="author" class="form-control" placeholder="Please input authors name"required #author='ngModel' [(ngModel)]="newQuote.author">
+                              <div [hidden]="author.value||author.pristine" class="alert alert-danger">
+                                <p>Author is required</p>
+                            </div>
+                              
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary rounded-pill" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success rounded-pill">ADD</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+<div class="container-fluid">
+
+    <hr>
+    <p><small class="text-muted"> Author </small> {{quote.author}}</p>
+    <p><small class="text-muted">Uploaded by </small> {{quote.userName}}</p>
+    <p><small class="text-muted">Posted </small> {{quote.datePosted|datePassed}} days ago</p>
+    <p> <span class="green">{{quote.upvote}} Upvotes   </span>  <br>   <span class="red">{{quote.downvote}} Downvotes</span></p>
+    <hr>
+
+    <button (click)='quoteDeletion(true)' class="btn btn-danger">Delete</button>
+    
+</div>
+
