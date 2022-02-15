@@ -15,10 +15,7 @@ export class QuoteComponent implements OnInit {
     new Quote(3,new Date(2020,1,26),"Peris","Ng'endo Borot","Be the change that you wish to see in the world.",40,10,false),
     new Quote(4,new Date(2018,2,28),"Yvonne","Naomie Atieno","Don't focus on today, instead focus on tomorrow.",20,60,false),
     new Quote(5,new Date(2019,2,28),"Lucy","Polly Mlati","The truth shall set you free.",20,5,false),
-    new Quote(6,new Date(2020,1,28),"Violet","Winston Churchill","The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty.",5,5,false),
-    new Quote(7,new Date(2019,10,28),"Margaret","Walt Disney","The Way Get Started Is To Quit Talking And Begin Doing.",10,5,false),
-    new Quote(8,new Date(2019,11,28),"Lillian","Will Rogers","Don’t Let Yesterday Take Up Too Much Of Today.",40,50,false),
-    new Quote(9,new Date(2019,5,28),"Michael","Steve Jobs","If You Are Working On Something That You Really Care About, You Don’t Have To Be Pushed. The Vision Pulls You.",10,50,false),
+    
   ];
 
   populars:Quote[]=[
