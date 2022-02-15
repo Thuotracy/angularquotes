@@ -19,9 +19,9 @@ export class QuoteComponent implements OnInit {
   ];
 
   populars:Quote[]=[
-    new Quote(1,new Date(2019,2,28),"Ruru","Oscar Wilde","Be yourself, everyone else is already taken.",40,10,false),
-    new Quote(3,new Date(2020,1,26),"Jane","Mahatma Gandhi","Love is kind.",40,10,false),
-    new Quote(8,new Date(2019,11,28),"Lillian","Will Rogers","The way to get started is quite talking and start.",40,50,false),
+    new Quote(1,new Date(2019,2,28),"Jabali","Thuo Tracy","Enjoy life is too short.",40,10,false),
+    new Quote(3,new Date(2020,1,26),"Jane","Mahatma Gandhi","Be the change that you wish to see in the world.",40,10,false),
+    
   
 ];
 
