@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Quotes": {
+    "Angular-Qoutes-master": {
       "projectType": "application",
       "schematics": {},
       "root": "",
