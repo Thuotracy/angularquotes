@@ -12,7 +12,7 @@ export class QuoteComponent implements OnInit {
   quotes:Quote[]=[
     new Quote(1,new Date(2019,2,28),"Jabali","Thuo Tracy","Enjoy life is too short.",40,10,false),
     new Quote(2,new Date(2019,10,28),"Winnie","Ajode Lucky","Trust in the process.",20,60,false),
-    new Quote(3,new Date(2020,1,26),"Jane","Ng'endo Borot","Be the change that you wish to see in the world.",40,10,false),
+    new Quote(3,new Date(2020,1,26),"Peris","Ng'endo Borot","Be the change that you wish to see in the world.",40,10,false),
     new Quote(4,new Date(2018,2,28),"Isaac","J.K. Rowling","If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals.",20,60,false),
     new Quote(5,new Date(2019,2,28),"Lucy","Mark Twain","If you tell the truth, you don't have to remember anything.",20,5,false),
     new Quote(6,new Date(2020,1,28),"Violet","Winston Churchill","The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty.",5,5,false),
