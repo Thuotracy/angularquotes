@@ -4,4 +4,8 @@
     font-family: 'Handlee';
     src: url(./assets/fonts/Handlee/Handlee-Regular.ttf);
 }
-body { background:url(./assets/images/bg2.jpg) ; font-family: 'Handlee';}
+/* body { background:url(./assets/images/bg2.jpg) ; font-family: 'Handlee';} */
+
+body{
+    background-color: bisque;
+}
